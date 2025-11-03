@@ -1,13 +1,9 @@
 # Dangonomics
 
-Welcome to **Dangonomics**, the digital classroom of Dango (Alex Pereira de Almeida)  
+Welcome to **Dangonomics**, the digital classroom of Dango.
 A 5th-year Epitech student, APE for Epitech Bachelor, web dev enthusiast, and weeb who loves drawing and spamming League of Legends between commits (´∀｀)
 
 This repo is my cozy little place to learn, create, and share lessons — both for myself and for anyone curious enough to explore.
-
----
-
-![Clannad Meme](https://i.imgur.com/XeBkhYv.jpeg)
 
 ---
 
@@ -18,7 +14,7 @@ This repo is my cozy little place to learn, create, and share lessons — both f
 - Prepare material for students I mentor  
 - Experiment with Markdown and GitHub repo design  
 
-Basically, it's like a classroom, but made of commits and caffeine.
+Basically, it's like a classroom.
 
 ---
 
@@ -45,8 +41,8 @@ Notes, exercises, and small tasks to master the basics of Git.
 
 Planned next lessons include:
 - Introduction to HTML & CSS  
+- JavaScript fundamentals
 - TypeScript and React small projects  
-- Mini “teaching projects” to apply what’s learned  
 
 ---
 
@@ -56,7 +52,6 @@ Planned next lessons include:
 Name: Alexandre Pereira de Almeida
 Role: APE & Student at Epitech Paris (Tek5)
 Passions: Web development, anime, League of Legends, and drawing
-Goal: Learn, teach, and make projects that people actually enjoy.
 ```
 
 ---
