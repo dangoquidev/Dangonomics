@@ -3,8 +3,6 @@
 Welcome to the special GitHub class of **Dango** (´∀｀)♡  
 This guide will help you set up Git, create your first repository, and push code to GitHub directly from Fedora Linux.
 
-![Fedora GitHub Meme](https://i.imgur.com/fz7gh4I.png)
-
 ---
 
 ## 1. Prerequisites
@@ -66,13 +64,7 @@ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 ```
 
 Press **Enter** to accept the default path and optionally add a passphrase.
-
-### Start the SSH agent and add your key
-
-```bash
-eval "$(ssh-agent -s)"
-ssh-add ~/.ssh/id_ed25519
-```
+*I recommend not using a passphrase for simplicity, but it's more secure with one.*
 
 ### Copy the public key
 
@@ -103,7 +95,6 @@ Expected output:
 ```bash
 git config --global user.name "Your Name"
 git config --global user.email "your_email@example.com"
-git config --global core.editor "nano"
 ```
 
 Check your settings:
@@ -113,17 +104,17 @@ git config --list
 
 ---
 
-## 6. Create a Local Project
+## 6. Clone Your Repository Locally
 
 ```bash
-mkdir my-first-repo
+git clone git@github.com:username/my-first-repo.git
 cd my-first-repo
-echo "# My first repo" > README.md
 ```
 
-Initialize the local Git repository:
+### 7 Create a sample file
+
 ```bash
-git init
+echo "# My First Repo" >> README.md
 ```
 
 Add your files:
@@ -138,27 +129,17 @@ git commit -m "Initial commit"
 
 ---
 
-## 7. Link Local Repo to GitHub
-
-Copy your SSH repo URL, then run:
-```bash
-git remote add origin git@github.com:username/my-first-repo.git
-```
-
----
-
 ## 8. Push Your Code to GitHub
 
 ```bash
-git branch -M main
-git push -u origin main
+git push
 ```
 
 Now check your GitHub repository — your files should appear there.
 
 ---
 
-## 9. Basic Git Commands Recap
+## 9. Basic Git Commands Cheat Sheet
 
 | Command | Description |
 |----------|-------------|
@@ -174,36 +155,13 @@ Now check your GitHub repository — your files should appear there.
 
 ---
 
-## 10. Test Your Setup
+## 10. Troubleshooting
 
-Try the full workflow:
-
-```bash
-cd ~
-git clone git@github.com:username/my-first-repo.git
-cd my-first-repo
-echo "Hello GitHub!" >> test.txt
-git add test.txt
-git commit -m "Add test file"
-git push
-```
-
-Then check your repo online — you should see the new file!
+If you encounter issues, try to check on the net for solutions. It's important to learn how to troubleshoot Git problems ( and any problems in general ) by yourself. It's a really useful skill to have as a developer.
 
 ---
 
-## 11. Troubleshooting
-
-| Problem | Solution |
-|----------|-----------|
-| Permission denied (publickey) | Re-add your SSH key to GitHub or `ssh-add` again |
-| Wrong branch name | Use `git branch -M main` before pushing |
-| Forgot commit message | Run `git commit --amend` |
-| Want to undo last commit | `git reset --soft HEAD~1` |
-
----
-
-## 12. Done
+## 11. Done
 
 You’ve successfully:
 - Installed Git and SSH on Fedora  
@@ -212,4 +170,4 @@ You’ve successfully:
 - Pushed and pulled files  
 
 You’re ready to code and collaborate with GitHub.  
-(｀・ω・´)ゞ Ganbatte!
+(｀・ω・´)ゞ
