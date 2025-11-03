@@ -4,6 +4,17 @@ Welcome to the special GitHub class of **Dango** (´∀｀)♡
 This guide will help you set up Git, create your first repository, and push code to GitHub directly from Fedora Linux.
 
 ---
+## Don't be scared!
+
+If you are lost or new to Git and GitHub, don't worry! This guide is made for absolute beginners.  
+Follow each step carefully, and you'll be pushing code in no time (｀・ω・´)ゞ
+
+If you are confused about any command or step, feel free to look it up online or ask for help.
+You can also check out my [Linux Beginner Cheat Sheet](./Linux/CheatSheet.md) for useful commands.
+
+GOOD LUCK!
+
+---
 
 ## 1. Prerequisites
 
