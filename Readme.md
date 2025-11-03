@@ -56,7 +56,7 @@ Passions: Web development, anime, League of Legends, and drawing
 
 ---
 
-![Clannad Tomoya and Nagisa](https://i.imgur.com/6tZ5Ccz.jpeg)
+![Clannad Tomoya and Nagisa](https://media1.tenor.com/m/tpKDUQkdeXYAAAAC/nagisa-nagisa-furukawa.gif)
 
 Thank you for visiting.  
 Feel free to explore, fork, or use these materials in your own way.  
