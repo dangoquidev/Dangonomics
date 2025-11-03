@@ -21,7 +21,7 @@ Basically, it's like a classroom.
 ## Current Sections
 
 ### Linux Cheat Sheet
-A colorful, beginner-friendly reference for essential Linux commands.  
+A beginner-friendly reference for essential Linux commands.  
 Covers navigation, file management, permissions, system info, and package management.
 → [View the Cheat Sheet](./Linux/CheatSheet.md)
 

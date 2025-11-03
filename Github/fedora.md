@@ -10,7 +10,7 @@ If you are lost or new to Git and GitHub, don't worry! This guide is made for ab
 Follow each step carefully, and you'll be pushing code in no time (｀・ω・´)ゞ
 
 If you are confused about any command or step, feel free to look it up online or ask for help.
-You can also check out my [Linux Beginner Cheat Sheet](./Linux/CheatSheet.md) for useful commands.
+You can also check out my [Linux Beginner Cheat Sheet](../Linux/CheatSheet.md) for useful commands.
 
 GOOD LUCK!
 
