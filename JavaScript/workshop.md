@@ -293,3 +293,7 @@ Next steps:
 * Learn Express.js or React
 * Practice every day — small steps build mastery (๑˃̵ᴗ˂̵)و
 
+---
+
+If you’re ready to explore backend development, you can start learning Express.js here: 
+[Building a MySQL Database Connection with Node.js and Express](https://anujdarji100737.medium.com/building-a-mysql-database-connection-with-node-js-and-express-b6b333f6e713)
