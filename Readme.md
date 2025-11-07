@@ -1,9 +1,6 @@
 # Dangonomics
 
 Welcome to **Dangonomics**, the digital classroom of Dango.
-A 5th-year Epitech student, APE for Epitech Bachelor, web dev enthusiast, and weeb who loves drawing and spamming League of Legends between commits (´∀｀)
-
-This repo is my cozy little place to learn, create, and share lessons — both for myself and for anyone curious enough to explore.
 
 ---
 
