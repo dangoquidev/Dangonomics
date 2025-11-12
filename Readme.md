@@ -42,15 +42,6 @@ Planned next lessons include:
 
 ---
 
-## About Me
-
-```
-Name: Alexandre Pereira de Almeida
-Role: APE & Student at Epitech Paris (Tek5)
-```
-
----
-
 ![Clannad Tomoya and Nagisa](https://media1.tenor.com/m/tpKDUQkdeXYAAAAC/nagisa-nagisa-furukawa.gif)
 
 Thank you for visiting.  
