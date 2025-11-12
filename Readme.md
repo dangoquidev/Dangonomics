@@ -4,17 +4,6 @@ Welcome to **Dangonomics**, the digital classroom of Dango.
 
 ---
 
-## About This Repo
-
-**Dangonomics** is a growing collection of lessons, exercises, and templates I create to:
-- Practice explaining technical concepts clearly  
-- Prepare material for students I mentor  
-- Experiment with Markdown and GitHub repo design  
-
-Basically, it's like a classroom.
-
----
-
 ## Current Sections
 
 ### Linux Cheat Sheet
@@ -53,7 +42,6 @@ Planned next lessons include:
 ```
 Name: Alexandre Pereira de Almeida
 Role: APE & Student at Epitech Paris (Tek5)
-Passions: Web development, anime, League of Legends, and drawing
 ```
 
 ---
