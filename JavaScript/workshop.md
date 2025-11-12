@@ -1,4 +1,4 @@
-# Workshop – JavaScript Core & Practice (´･ᴗ･` )
+# Workshop – JavaScript Core & Practice (Updated)
 
 [![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow.svg)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 [![Level](https://img.shields.io/badge/Level-Beginner%20to%20Intermediate-green.svg)]()
@@ -6,7 +6,7 @@
 
 ---
 
-## Introduction (⁄⁄>////<⁄⁄)
+## Introduction
 
 Welcome to the **JavaScript Core Workshop**! Here you’ll learn the magic behind JS through fun little coding quests. Each mission helps you unlock new skills so you can soon build your own front-end projects with **HTML, CSS, and JavaScript** (´▽`ʃ♡ƪ)
 
@@ -31,10 +31,14 @@ Understand how JavaScript handles variable declarations, scope, and type convers
 
 ### Tasks
 
+For now you will work with js script and execute them using node.
+
+If possible, keep track of everything you do properly. It can be useful if you want to verify something to your teacher.
+
 **1.1 Create Variables**
 ```js
 let name = "Alex";
-const age = 25;
+const age = 22;
 var city = "Paris";
 ```
 Explain the difference between `var`, `let`, and `const`. Which one should you prefer in modern JS?
@@ -64,7 +68,7 @@ console.log("5" - 3);
 console.log(true + 1);
 console.log(false + "hello");
 ```
-Guess before you run it — JS can be surprising (°ロ°) !
+Guess before you run it. JS can be surprising (°ロ°) !
 
 ---
 
@@ -98,9 +102,7 @@ function greet(name = "stranger") {
   return `Hello, ${name}!`;
 }
 ```
-Try calling it with and without arguments.
-
-Create a function `sum(...numbers)` that accepts any number of arguments and returns their sum.
+Try calling it with and without arguments. What do you understand ?
 
 ---
 
@@ -153,34 +155,28 @@ Understand how to work with objects and modern syntax.
 ### Tasks
 
 **4.1 Object Basics**
-```js
-const person = {
-  name: "Alex",
-  age: 25,
-  city: "Paris",
-  introduce() {
-    return `Hi, I'm ${this.name}, ${this.age} years old from ${this.city}`;
-  }
-};
-```
+
+Create an object called person with the properties name, age, and city.
+Add a method introduce() that returns a string like: *Hi, I'm Alex, 22 years old from Paris.*
 
 ---
 
 **4.2 Destructuring**
-```js
-const user = { name: "Alex", age: 25, city: "Paris", email: "alex@mail.com" };
-const { name, email } = user;
-```
-→ Try renaming or giving default values.
 
+Create an object user with name, age, city, and email.
+Use destructuring to extract name and email.
+
+Then try:
+Renaming **email** to **contact** during destructuring
+Giving **country** a default value (for example "France")
 ---
 
 **4.3 Spread & Merge**
-```js
-const defaults = { theme: "dark", lang: "en" };
-const userPrefs = { lang: "fr", notifications: true };
-const merged = { ...defaults, ...userPrefs };
-```
+Create two objects defaults and userPrefs.
+**defaults** should have **theme** and **lang**
+**userPrefs** should override **lang** and add **notifications: true**
+
+Use the spread operator to merge them into a new object settings and log it.
 ---
 
 ## Exercise 5: Control Flow & Loops (｡•̀ᴗ-)✧
@@ -190,7 +186,7 @@ Write logic using conditions and loops.
 
 ### Tasks
 
-**5.1 FizzBuzz**
+**5.1 FizzBuzz but in JS (classic)**
 Loop from 1 to 50:
 * Print "Fizz" if divisible by 3
 * "Buzz" if divisible by 5
@@ -201,6 +197,7 @@ Loop from 1 to 50:
 
 **5.2 Switch Statement**
 Create a function `getDayName(dayNumber)` that takes a number (1-7) and returns the weekday name.
+You must use a **Switch**.
 
 ---
 
@@ -213,9 +210,33 @@ Try both on arrays and objects. What’s the difference?
 
 **6.1 Template Literals** – use backticks instead of + concatenation.
 
+Try to log this :
+
+```js
+const name = "Alex";
+const city = "Paris";
+
+console.log("Hi, I'm " + name + " from " + city + ".");
+```
+
+without using any **+**
+
+---
+
 **6.2 Spread Operator** – combine or copy arrays.
 
+Combine the two arrays without using any function `like concat()` or loops.
+
+```js
+const arr1 = [1, 2, 3];
+const arr2 = [4, 5];
+```
+
+---
+
 **6.3 Rest Parameters** – handle multiple arguments in functions.
+
+Create a function `sum(...numbers)` that accepts any number of arguments and returns their sum. *What are these mysterious dots before the variable...*
 
 ---
 
@@ -235,19 +256,88 @@ Rewrite the previous using `async/await` with `try/catch`.
 
 ---
 
-## Exercise 8: DOM Manipulation (⁄⁄>////<⁄⁄)
+## Exercise 8: DOM Manipulation
 
-**8.1 Selecting Elements** – try `getElementById`, `querySelector`, etc.
+Let's go back to something familiar: HTML, but this time controlled by JavaScript.
 
-**8.2 Creating Elements** – use `createElement`, `textContent`, and `appendChild`.
+The html file is already provided [here](./Exercise8.html).
 
-**8.3 Event Listeners** – create a button + input, print the input value on click.
+Use it to complete the following exercises in a script.js file.
+---
 
-**8.4 Event Object** – inspect `event.target`, `event.type`, `event.key`.
+### Tasks
 
-**8.5 Form Handling** – prevent default submission and log form data.
+#### **8.1 Selecting Elements**
 
-**8.6 Dynamic List Game** – make a tiny todo list with add/remove buttons.
+Use `document.getElementById()` and `document.querySelector()` to select:
+
+* The button with id `myButton`
+* The input with id `myInput`
+  Then, `console.log()` them to confirm you selected the right elements.
+
+---
+
+#### **8.2 Creating Elements**
+
+Use `document.createElement()` to create:
+
+* A new `<p>` element
+* Give it some `textContent` like "Hello from JavaScript!"
+* Use `appendChild()` to add it to the `<body>`.
+
+---
+
+#### **8.3 Event Listeners**
+
+Add an event listener to the button `myButton`:
+When clicked, it should:
+
+1. Read the value of the input `myInput`
+2. Print it in the console
+3. Clear the input after printing
+
+---
+
+#### **8.4 Event Object**
+
+Modify your button’s event listener to log:
+
+```js
+console.log(event.target, event.type);
+```
+
+Then, add a `keydown` event on `document` and log the pressed key:
+
+---
+
+#### **8.5 Form Handling**
+
+First, prevent the form from reloading.
+
+Then log an object with all form data:
+
+```js
+{ username: "Alex", email: "alex@mail.com" }
+```
+
+Use `new FormData(form)` and convert it with `Object.fromEntries()`.
+
+---
+
+#### **8.6 Dynamic List Game**
+
+Turn the last section into a mini todo list:
+
+* When clicking "Add Task", get the input value
+* Create a new `<li>` element with that text
+* Add a "Remove" button inside each `<li>`
+* When clicking the "Remove", remove that `<li>` from the list
+
+---
+
+### Bonus Challenge
+
+Add some CSS directly from JS using element style or toggle a class with `.classList.add()` / `.classList.toggle()`.
 
 ---
 
@@ -261,7 +351,38 @@ Use `JSON.stringify()` and `JSON.parse()` for conversion.
 
 ---
 
-## Exercise 13: Mini Project – Pokémon Fetcher (≧◡≦) ♡
+Many issues come from simple errors. Learn how to find and fix them!
+
+**Tips:**
+- Use `console.log()` to track variable values.
+- Check your browser DevTools → **Console** and **Sources** tab.
+- `undefined` means a variable exists but has no value.
+- `ReferenceError` often means you used something before declaring it.
+
+---
+
+## Before the final exercise
+
+Learn how to split code into multiple files.
+
+**math.js**
+```js
+export function add(a, b) {
+  return a + b;
+}
+```
+
+**main.js**
+```js
+import { add } from './math.js';
+console.log(add(2, 3));
+```
+
+Try creating a small utility file and importing it into another JS file.
+
+---
+
+## Exercise 10: Mini Project – Pokémon Fetcher (≧◡≦) ♡
 
 Create a mini **Pokémon search app**:
 
@@ -287,13 +408,6 @@ You’ve completed the journey! You now know:
 - Objects & loops
 - Modern ES6 syntax
 - Basic DOM manipulation & async fetch
+- Debugging, modules, and backend context
 
-Next steps:
-* Build your own small web app
-* Learn Express.js or React
-* Practice every day — small steps build mastery (๑˃̵ᴗ˂̵)و
-
----
-
-If you’re ready to explore backend development, you can start learning Express.js here: 
-[Building a MySQL Database Connection with Node.js and Express](https://anujdarji100737.medium.com/building-a-mysql-database-connection-with-node-js-and-express-b6b333f6e713)
+Thanks and good luck for your next project !
