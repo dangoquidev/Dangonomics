@@ -28,11 +28,16 @@ Notes, exercises, and small tasks to master the basics of Git.
 
 ---
 
+### JavaScript Class
+
+→ [JavaScript Beginner Lessons](./JavaScript/workshop.md)
+
+---
+
 ## Upcoming Additions
 
 Planned next lessons include:
 - Introduction to HTML & CSS  
-- JavaScript fundamentals
 - TypeScript and React small projects  
 
 ---
